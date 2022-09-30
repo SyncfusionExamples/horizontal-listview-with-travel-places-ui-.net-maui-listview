@@ -1,0 +1,331 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>ListViewMaui</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>ListViewMaui</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.listviewmaui</ApplicationId>
+		<ApplicationIdGuid>45F1C77F-A79B-4630-828E-DD43E3C068DB</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-maccatalyst|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-maccatalyst|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows10.0.19041.0|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-windows10.0.19041.0|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Images\place.png" />
+	  <None Remove="Images\place101.jpg" />
+	  <None Remove="Images\place102.jpg" />
+	  <None Remove="Images\place103.jpg" />
+	  <None Remove="Images\place104.jpg" />
+	  <None Remove="Images\place105.jpg" />
+	  <None Remove="Images\place106.jpg" />
+	  <None Remove="Images\place107.jpg" />
+	  <None Remove="Images\place108.jpg" />
+	  <None Remove="Images\place11.jpg" />
+	  <None Remove="Images\place111.jpg" />
+	  <None Remove="Images\place112.jpg" />
+	  <None Remove="Images\place113.jpg" />
+	  <None Remove="Images\place114.jpg" />
+	  <None Remove="Images\place115.jpg" />
+	  <None Remove="Images\place12.jpg" />
+	  <None Remove="Images\place121.jpg" />
+	  <None Remove="Images\place122.jpg" />
+	  <None Remove="Images\place123.jpg" />
+	  <None Remove="Images\place124.jpg" />
+	  <None Remove="Images\place13.jpg" />
+	  <None Remove="Images\place131.jpg" />
+	  <None Remove="Images\place132.jpg" />
+	  <None Remove="Images\place133.jpg" />
+	  <None Remove="Images\place134.jpg" />
+	  <None Remove="Images\place14.jpg" />
+	  <None Remove="Images\place141.jpg" />
+	  <None Remove="Images\place142.jpg" />
+	  <None Remove="Images\place143.jpg" />
+	  <None Remove="Images\place144.jpg" />
+	  <None Remove="Images\place145.jpg" />
+	  <None Remove="Images\place146.jpg" />
+	  <None Remove="Images\place15.jpg" />
+	  <None Remove="Images\place151.jpg" />
+	  <None Remove="Images\place152.jpg" />
+	  <None Remove="Images\place153.jpg" />
+	  <None Remove="Images\place154.jpg" />
+	  <None Remove="Images\place16.jpg" />
+	  <None Remove="Images\place17.jpg" />
+	  <None Remove="Images\place18.jpg" />
+	  <None Remove="Images\place19.jpg" />
+	  <None Remove="Images\place21.jpg" />
+	  <None Remove="Images\place22.jpg" />
+	  <None Remove="Images\place23.jpg" />
+	  <None Remove="Images\place24.jpg" />
+	  <None Remove="Images\place25.jpg" />
+	  <None Remove="Images\place26.jpg" />
+	  <None Remove="Images\place27.jpg" />
+	  <None Remove="Images\place28.jpg" />
+	  <None Remove="Images\place29.jpg" />
+	  <None Remove="Images\place31.jpg" />
+	  <None Remove="Images\place32.jpg" />
+	  <None Remove="Images\place33.jpg" />
+	  <None Remove="Images\place34.jpg" />
+	  <None Remove="Images\place35.jpg" />
+	  <None Remove="Images\place36.jpg" />
+	  <None Remove="Images\place37.jpg" />
+	  <None Remove="Images\place38.jpg" />
+	  <None Remove="Images\place39.jpg" />
+	  <None Remove="Images\place41.jpg" />
+	  <None Remove="Images\place42.jpg" />
+	  <None Remove="Images\place43.jpg" />
+	  <None Remove="Images\place44.jpg" />
+	  <None Remove="Images\place45.jpg" />
+	  <None Remove="Images\place46.jpg" />
+	  <None Remove="Images\place47.jpg" />
+	  <None Remove="Images\place48.jpg" />
+	  <None Remove="Images\place49.jpg" />
+	  <None Remove="Images\place51.jpg" />
+	  <None Remove="Images\place52.jpg" />
+	  <None Remove="Images\place53.jpg" />
+	  <None Remove="Images\place54.jpg" />
+	  <None Remove="Images\place55.jpg" />
+	  <None Remove="Images\place56.jpg" />
+	  <None Remove="Images\place57.jpg" />
+	  <None Remove="Images\place58.jpg" />
+	  <None Remove="Images\place59.jpg" />
+	  <None Remove="Images\place61.jpg" />
+	  <None Remove="Images\place62.jpg" />
+	  <None Remove="Images\place63.jpg" />
+	  <None Remove="Images\place64.jpg" />
+	  <None Remove="Images\place65.jpg" />
+	  <None Remove="Images\place66.jpg" />
+	  <None Remove="Images\place67.jpg" />
+	  <None Remove="Images\place68.jpg" />
+	  <None Remove="Images\place69.jpg" />
+	  <None Remove="Images\place71.jpg" />
+	  <None Remove="Images\place72.jpg" />
+	  <None Remove="Images\place73.jpg" />
+	  <None Remove="Images\place74.jpg" />
+	  <None Remove="Images\place75.jpg" />
+	  <None Remove="Images\place76.jpg" />
+	  <None Remove="Images\place77.jpg" />
+	  <None Remove="Images\place78.jpg" />
+	  <None Remove="Images\place79.jpg" />
+	  <None Remove="Images\place81.jpg" />
+	  <None Remove="Images\place82.jpg" />
+	  <None Remove="Images\place83.jpg" />
+	  <None Remove="Images\place84.jpg" />
+	  <None Remove="Images\place85.jpg" />
+	  <None Remove="Images\place86.jpg" />
+	  <None Remove="Images\place91.jpg" />
+	  <None Remove="Images\place92.jpg" />
+	  <None Remove="Images\place93.jpg" />
+	  <None Remove="Images\place94.jpg" />
+	  <None Remove="Images\place_1.jpg" />
+	  <None Remove="Images\place_10.jpg" />
+	  <None Remove="Images\place_11.jpg" />
+	  <None Remove="Images\place_12.jpg" />
+	  <None Remove="Images\place_13.jpg" />
+	  <None Remove="Images\place_14.jpg" />
+	  <None Remove="Images\place_15.jpg" />
+	  <None Remove="Images\place_2.jpg" />
+	  <None Remove="Images\place_23.jpg" />
+	  <None Remove="Images\place_3.jpg" />
+	  <None Remove="Images\place_4.jpg" />
+	  <None Remove="Images\place_5.jpg" />
+	  <None Remove="Images\place_6.jpg" />
+	  <None Remove="Images\place_7.jpg" />
+	  <None Remove="Images\place_8.jpg" />
+	  <None Remove="Images\place_9.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Images\place101.jpg" />
+	  <EmbeddedResource Include="Images\place102.jpg" />
+	  <EmbeddedResource Include="Images\place103.jpg" />
+	  <EmbeddedResource Include="Images\place104.jpg" />
+	  <EmbeddedResource Include="Images\place105.jpg" />
+	  <EmbeddedResource Include="Images\place106.jpg" />
+	  <EmbeddedResource Include="Images\place107.jpg" />
+	  <EmbeddedResource Include="Images\place108.jpg" />
+	  <EmbeddedResource Include="Images\place11.jpg" />
+	  <EmbeddedResource Include="Images\place111.jpg" />
+	  <EmbeddedResource Include="Images\place112.jpg" />
+	  <EmbeddedResource Include="Images\place113.jpg" />
+	  <EmbeddedResource Include="Images\place114.jpg" />
+	  <EmbeddedResource Include="Images\place115.jpg" />
+	  <EmbeddedResource Include="Images\place12.jpg" />
+	  <EmbeddedResource Include="Images\place121.jpg" />
+	  <EmbeddedResource Include="Images\place122.jpg" />
+	  <EmbeddedResource Include="Images\place123.jpg" />
+	  <EmbeddedResource Include="Images\place124.jpg" />
+	  <EmbeddedResource Include="Images\place13.jpg" />
+	  <EmbeddedResource Include="Images\place131.jpg" />
+	  <EmbeddedResource Include="Images\place132.jpg" />
+	  <EmbeddedResource Include="Images\place133.jpg" />
+	  <EmbeddedResource Include="Images\place134.jpg" />
+	  <EmbeddedResource Include="Images\place14.jpg" />
+	  <EmbeddedResource Include="Images\place141.jpg" />
+	  <EmbeddedResource Include="Images\place142.jpg" />
+	  <EmbeddedResource Include="Images\place143.jpg" />
+	  <EmbeddedResource Include="Images\place144.jpg" />
+	  <EmbeddedResource Include="Images\place145.jpg" />
+	  <EmbeddedResource Include="Images\place146.jpg" />
+	  <EmbeddedResource Include="Images\place15.jpg" />
+	  <EmbeddedResource Include="Images\place151.jpg" />
+	  <EmbeddedResource Include="Images\place152.jpg" />
+	  <EmbeddedResource Include="Images\place153.jpg" />
+	  <EmbeddedResource Include="Images\place154.jpg" />
+	  <EmbeddedResource Include="Images\place16.jpg" />
+	  <EmbeddedResource Include="Images\place17.jpg" />
+	  <EmbeddedResource Include="Images\place18.jpg" />
+	  <EmbeddedResource Include="Images\place21.jpg" />
+	  <EmbeddedResource Include="Images\place22.jpg" />
+	  <EmbeddedResource Include="Images\place23.jpg" />
+	  <EmbeddedResource Include="Images\place24.jpg" />
+	  <EmbeddedResource Include="Images\place25.jpg" />
+	  <EmbeddedResource Include="Images\place26.jpg" />
+	  <EmbeddedResource Include="Images\place27.jpg" />
+	  <EmbeddedResource Include="Images\place31.jpg" />
+	  <EmbeddedResource Include="Images\place32.jpg" />
+	  <EmbeddedResource Include="Images\place33.jpg" />
+	  <EmbeddedResource Include="Images\place34.jpg" />
+	  <EmbeddedResource Include="Images\place35.jpg" />
+	  <EmbeddedResource Include="Images\place36.jpg" />
+	  <EmbeddedResource Include="Images\place37.jpg" />
+	  <EmbeddedResource Include="Images\place38.jpg" />
+	  <EmbeddedResource Include="Images\place41.jpg" />
+	  <EmbeddedResource Include="Images\place42.jpg" />
+	  <EmbeddedResource Include="Images\place43.jpg" />
+	  <EmbeddedResource Include="Images\place44.jpg" />
+	  <EmbeddedResource Include="Images\place45.jpg" />
+	  <EmbeddedResource Include="Images\place46.jpg" />
+	  <EmbeddedResource Include="Images\place47.jpg" />
+	  <EmbeddedResource Include="Images\place48.jpg" />
+	  <EmbeddedResource Include="Images\place49.jpg" />
+	  <EmbeddedResource Include="Images\place51.jpg" />
+	  <EmbeddedResource Include="Images\place52.jpg" />
+	  <EmbeddedResource Include="Images\place53.jpg" />
+	  <EmbeddedResource Include="Images\place54.jpg" />
+	  <EmbeddedResource Include="Images\place55.jpg" />
+	  <EmbeddedResource Include="Images\place56.jpg" />
+	  <EmbeddedResource Include="Images\place57.jpg" />
+	  <EmbeddedResource Include="Images\place58.jpg" />
+	  <EmbeddedResource Include="Images\place61.jpg" />
+	  <EmbeddedResource Include="Images\place62.jpg" />
+	  <EmbeddedResource Include="Images\place63.jpg" />
+	  <EmbeddedResource Include="Images\place64.jpg" />
+	  <EmbeddedResource Include="Images\place65.jpg" />
+	  <EmbeddedResource Include="Images\place66.jpg" />
+	  <EmbeddedResource Include="Images\place67.jpg" />
+	  <EmbeddedResource Include="Images\place68.jpg" />
+	  <EmbeddedResource Include="Images\place69.jpg" />
+	  <EmbeddedResource Include="Images\place71.jpg" />
+	  <EmbeddedResource Include="Images\place72.jpg" />
+	  <EmbeddedResource Include="Images\place73.jpg" />
+	  <EmbeddedResource Include="Images\place74.jpg" />
+	  <EmbeddedResource Include="Images\place75.jpg" />
+	  <EmbeddedResource Include="Images\place76.jpg" />
+	  <EmbeddedResource Include="Images\place81.jpg" />
+	  <EmbeddedResource Include="Images\place82.jpg" />
+	  <EmbeddedResource Include="Images\place83.jpg" />
+	  <EmbeddedResource Include="Images\place84.jpg" />
+	  <EmbeddedResource Include="Images\place85.jpg" />
+	  <EmbeddedResource Include="Images\place86.jpg" />
+	  <EmbeddedResource Include="Images\place91.jpg" />
+	  <EmbeddedResource Include="Images\place92.jpg" />
+	  <EmbeddedResource Include="Images\place93.jpg" />
+	  <EmbeddedResource Include="Images\place94.jpg" />
+	  <EmbeddedResource Include="Images\place_1.jpg" />
+	  <EmbeddedResource Include="Images\place_10.jpg" />
+	  <EmbeddedResource Include="Images\place_11.jpg" />
+	  <EmbeddedResource Include="Images\place_12.jpg" />
+	  <EmbeddedResource Include="Images\place_13.jpg" />
+	  <EmbeddedResource Include="Images\place_14.jpg" />
+	  <EmbeddedResource Include="Images\place_15.jpg" />
+	  <EmbeddedResource Include="Images\place_2.jpg" />
+	  <EmbeddedResource Include="Images\place_3.jpg" />
+	  <EmbeddedResource Include="Images\place_4.jpg" />
+	  <EmbeddedResource Include="Images\place_5.jpg" />
+	  <EmbeddedResource Include="Images\place_6.jpg" />
+	  <EmbeddedResource Include="Images\place_7.jpg" />
+	  <EmbeddedResource Include="Images\place_8.jpg" />
+	  <EmbeddedResource Include="Images\place_9.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.2.50" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\HorizontalOrientation.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+</Project>
