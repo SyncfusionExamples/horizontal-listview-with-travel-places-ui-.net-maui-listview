@@ -26,7 +26,7 @@
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" Text="Tourist Destinations near:" FontSize="16" TextColor="#E3000000" FontFamily="Roboto-Medium" CharacterSpacing="0.25" Margin="16,10,0,0"/>
+            <Label Grid.Row="0" Text="Tourist Destinations Near:" FontSize="16" TextColor="#E3000000" FontFamily="Roboto-Medium" CharacterSpacing="0.25" Margin="16,10,0,0"/>
             <ListView:SfListView x:Name="listView" Grid.Row="1"                                   
                                  ItemsSource="{Binding Places}"                                
                                  ScrollBarVisibility="Never"
