@@ -96,14 +96,14 @@ namespace ListViewMaui
 
         readonly string[] Place1Description = new string[]
       {
-            "Central Park is an urban park & fifth largest park in New York City.",
-            "The Metropolitan Museum is the largest art museum in the Western Hemisphere.",
+            "Central Park is an urban park and the fifth largest park in New York City.",
+            "The Metropolitan Museum is the largest art museum in the western hemisphere.",
             "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island.",
-            "The Empire State Building is a 102-story Art Deco skyscraper in Mid-Manhattan.",
-            "The Solomon R. Guggenheim Museum is an art museum, Manhattan in New York City.  ",
-            "Times Square is a tourist destination in Mid-Manhattan and More.",
+            "The Empire State Building is a 102-story art deco skyscraper in mid-Manhattan.",
+            "The Solomon R. Guggenheim Museum is an art museum in Manhattan.",
+            "Times Square is a tourist destination in mid-Manhattan.",
             "The Brooklyn Bridge is a hybrid cable-stayed bridge in New York City.",
-            "It is a natural history museum on the Upper West Side of Manhattan, New York City.",
+            "The American Museum of Natural History  sits in the Upper West Side of Manhattan.",
 
       };
         readonly string[] Place2 = new string[]
@@ -120,13 +120,13 @@ namespace ListViewMaui
 
         readonly string[] Place2Description = new string[]
       {
-            "The one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean.",
-            "Alcatraz Island is a small island in San Francisco Bay,California.",
-            "It is a modern & contemporary art museum in San Francisco.",
-            "The Park is a large urban park consisting of 1,017 acres of public grounds.",
-            "The California Academy is a research institute & natural history museum.",
-            "It is famous for a steep and one-block section with eight hairpin turns.",
-            "It is located on Mount Tamalpais near the Pacific coast, California.",
+            "This bridge crosses the one-mile-wide strait between San Francisco Bay and the Pacific Ocean.",
+            "Alcatraz is a former prison on a small island in the San Francisco Bay.",
+            "A modern and contemporary art museum in San Francisco.",
+            "The park is a large urban park consisting of 1,017 acres of public grounds.",
+            "The California Academy of Sciences is a research institute and natural history museum.",
+            "Lombard St. is famous for a steep one-block section with eight hairpin turns.",
+            "Muir Woods protects an old-growth redwood forest on Mount Tamalpais.",
 
       };
         readonly string[] Place3 = new string[]
@@ -143,14 +143,14 @@ namespace ListViewMaui
 
         readonly string[] Place3Description = new string[]
       {
-            "The Art Institute of Chicago have been a fixture on the creative landscape.",
-            "It is a natural history museum and one of the largest such museums in the world. ",
-            "Navy Pier is a 3,300-foot-long pier on the shoreline of Lake Michigan, Chicago.",
+            "The Art Institute of Chicago is the second-largest art museum in the USA.",
+            "The Field Museum is one of the largest natural history museums in the world. ",
+            "Navy Pier is a 3,300-foot-long pier and tourist attraction on the shore of Lake Michigan.",
             "Millennium Park is a public park located in the Loop community area of Chicago.",
-            "Shedd Aquarium is an indoor public aquarium and Opened on May 30, 1930.",
-            "The Lincoln Park Zoo is a 35-acre zoo in Lincoln Park, Chicago, Illinois.",
+            "Shedd Aquarium is an indoor public aquarium that opened in 1930.",
+            "The Lincoln Park Zoo is a 35-acre zoo opened in 1868 in Chicago.",
             "The Cloud Gate is a public sculpture by Indian-born British artist Anish Kapoor.",
-            "The Willis Tower is a 108-story, 1,450-foot skyscraper in Chicago.",
+            "At 108 stories, the Willis Tower was the world’s tallest skyscraper for 25 years.",
 
       };
         readonly string[] Place4 = new string[]
@@ -168,15 +168,15 @@ namespace ListViewMaui
 
         readonly string[] Place4Description = new string[]
       {
-            "Yosemite Falls is the highest waterfall in Yosemite National Park, Sierra Nevada.",
+            "Yosemite Falls is the highest waterfall in Yosemite National Park.",
             "The Half Dome is a granite dome at the eastern end of Yosemite Valley.",
-            "Glacier Point is a viewpoint above Yosemite Valley in California.",
-            "The El Capitan is a vertical rock formation in Yosemite National Park.",
+            "Glacier Point is a viewpoint above Yosemite Valley.",
+            "The El Capitan is a vertical rock formation in Yosemite National Park popular with climbers.",
             "The Yosemite Valley is a glacial valley in Yosemite National Park.",
-            "The Tunnel View is a scenic viewpoint on California State Route 41. ",
-            "The Bridalveil Fall is one of the most prominent waterfalls in Yosemite Valley.",
-            "The Ahwahnee Hotel is a grand hotel in Yosemite National Park, California.",
-            "The Tuolumne Meadows is a gentle, dome- studded, and sub-alpine meadow area.",
+            "The Tunnel View is a scenic viewpoint on California State Route 41.",
+            "Fed by Ostrander Lake, Bridalveil Fall is one of the tallest waterfalls in Yosemite Valley.",
+            "The Ahwahnee Hotel is a grand hotel in Yosemite National Park.",
+            "The Tuolumne Meadows is a gentle, dome- studded, sub-alpine meadow area.",
 
       };
         readonly string[] Place5 = new string[]
@@ -193,14 +193,14 @@ namespace ListViewMaui
 
         readonly string[] Place5Description = new string[]
       {
-            "The White House is the official residence of the US president in Washington DC.",
-            "The Capitol is the seat of the US Congress in Washington DC.",
-            "The Smithsonian is a group of museums, education, and research centers etc.",
-            "The Lincoln Memorial is built to honor the 16th president of the U.S, Abraham Lincoln.",
-            "The National Gallery of Art is a national art museum in Washington DC, United States.",
-            "It was founded in 1910 and is based in Washington, District of Columbia.",
-            "The Washington Monument is an obelisk within the National Mall in Washington DC.",
-            "It was established in 1946 as the National Air Museum.",
+            "The White House is the official residence of the U.S. president in Washington, D.C.",
+            "The Capitol building is the seat of the U.S. Congress.",
+            "The Smithsonian is the largest group of museums, education and research centers in the world.",
+            "The Lincoln Memorial was built to honor the 16th president of the U.S., Abraham Lincoln.",
+            "The National Gallery of Art collects and exhibits Western art in Washington, D.C.",
+            "Founded in 1910, this Smithsonian branch contains the largest natural history collection in the world.",
+            "The Washington Monument is a 169-meter tall obelisk in the National Mall.",
+            "The Air and Space Museum displays pieces like the first airplane and the command module of Apollo 11.",
 
       };
         readonly string[] Place6 = new string[]
@@ -219,15 +219,15 @@ namespace ListViewMaui
 
         readonly string[] Place6Description = new string[]
       {
-            "It is a visual arts museum that offers a collection of paintings, photography etc.",
-            "Disneyland is a theme park in Anaheim, California, which was opened in 1955.",
-            "The Santa Monica Pier is a large double jointed pier at the foot of Colorado Avenue.",
-            "It is a popular tourist attraction with a close view of the Hollywood Sign.",
-            "It is a campus of the Getty Museum & other programs of the Getty Trust. ",
-            "The Universal Studios Hollywood is a film studio and theme park.",
-            "The Hollywood Sign is an American landmark and cultural icon.",
-            "It is a collections-based educational and research institution.",
-            "The Broad is a contemporary art museum on Grand Avenue in Los Angeles.",
+            "A visual arts museum that offers a collection of paintings, photography, etc.",
+            "Disneyland is a theme park in Anaheim, California, which opened in 1955.",
+            "The Santa Monica Pier is a large, double-jointed pier with an amusement park.",
+            "A popular tourist attraction with a close view of the Hollywood Sign.",
+            "The campus of the Getty Museum and other programs of the Getty Trust.",
+            "Universal Studios Hollywood is a film studio and theme park.",
+            "“Hollywood” is famously spelled out in 45-foot-high letters on Mount Lee.",
+            "The Huntington exhibits rare American and European books and art and promotes research.",
+            "The Broad is a contemporary art museum on Grand Avenue in L.A. ",
 
       };
         readonly string[] Place7 = new string[]
@@ -243,11 +243,11 @@ namespace ListViewMaui
         readonly string[] Place7Description = new string[]
       {
             "It is the 20th largest art museum in the world, measured by the public gallery area.",
-            "The Isabella Stewart Gardner Museum is an art museum in Boston, Massachusetts.",
-            "The Museum of Science (MoS) is a science museum and indoor zoo in Boston.",
-            "Fenway Park is a baseball stadium in Boston, near Kenmore Square. ",
-            "The Faneuil Hall is a marketplace and meeting hall located near the waterfront.",
-            "Boston Children's Museum is the second oldest children's museum in US.",
+            "The Isabella Stewart Gardner Museum is an art museum in Boston.",
+            "The Museum of Science contains 700 exhibits and an indoor zoo in Boston.",
+            "Fenway Park is a baseball stadium in Boston, home of the Red Sox team. ",
+            "Faneuil Hall is a marketplace and meeting hall from 1742 located near the waterfront.",
+            "Boston Children's Museum is the second oldest children's museum in the U.S.",
 
       };
         readonly string[] Place8 = new string[]
@@ -262,12 +262,12 @@ namespace ListViewMaui
 
         readonly string[] Place8Description = new string[]
       {
-            "The Space Needle is an observation tower & Considered to be an icon of the city.",
-            "It was founded by Microsoft co-founder Paul Allen in 2000.",
-            "The Chihuly Garden and Glass is an exhibit in the Seattle Center.",
-            "The Pike Place Market is a public market & opened on August 17, 1907.",
-            "Its collections include African arts, American arts, decorative arts etc.",
-            "The Discovery Park is a 534-acre park, Washington.",
+            "The Space Needle is an observation tower and an icon of Seattle.",
+            "MoPOP celebrates the music, films, video games, and fiction writing.",
+            "The Chihuly Garden and Glass is an exhibit of glass art in the Seattle Center.",
+            "Pike Place Market is a famous public market where Starbucks originated.",
+            "The Seattle Art Museum’s collections include African, American, and decorative arts.",
+            "At 534 acres, Discovery Park is Seattle’s largest public park.",
       };
         readonly string[] Place9 = new string[]
         {
@@ -279,10 +279,10 @@ namespace ListViewMaui
 
         readonly string[] Place9Description = new string[]
       {
-            "Outdoor museum with creative street art.",
+            "An outdoor museum with creative street art.",
             "The Miami Seaquarium is a 38-acre oceanarium. It was founded in 1955.",
+            "An 83-acre botanic garden known for collections of rare tropical plants.",
             "Interactive exhibits, classes, and shows.",
-            "This park includes the Cape Florida Light.",
 
       };
         readonly string[] Place10 = new string[]
@@ -300,14 +300,14 @@ namespace ListViewMaui
 
         readonly string[] Place10Description = new string[]
       {
-            "The Bellagio Resort and Casino is a building in Las Vegas, USA.",
-            "The MGM Grand Las Vegas is a hotel and casino located on the Las Vegas Strip.",
-            "The Las Vegas Strip is a stretch of Las Vegas Boulevard South in Clark County.",
-            "It is an area managed by the Bureau of Land Management.",
-            "The Mirage is a casino resort on the Las Vegas Strip in Paradise, Nevada.",
-            "The Stratosphere Tower is a building in Las Vegas, Nevada, United States.",
-            "The Neon Museum features signs from old casinos & other businesses.",
-            "Its facilities and services include hotel rooms, entertainment shows etc. ",
+            "The Bellagio Resort and Casino is a hotel on the Las Vegas Strip with an Italian theme.",
+            "The MGM Grand is a hotel and casino located on the Las Vegas Strip.",
+            "The Las Vegas Strip is the part of Las Vegas Boulevard South lined with famous casinos.",
+            "This conservation area is popular for hiking, climbing, and bicycling.",
+            "The Mirage is a casino resort on the Las Vegas Strip.",
+            "The Strat Tower is a casino in Las Vegas with the tallest observation tower in the U.S.",
+            "The Neon Museum features signs from old casinos and other businesses.",
+            "The New York-New York is a hotel and casino on the Las Vegas Strip.",
       };
         readonly string[] Place11 = new string[]
       {
@@ -321,11 +321,11 @@ namespace ListViewMaui
 
         readonly string[] Place11Description = new string[]
       {
-            "Balboa Park is a 1,200-acre historic urban cultural park in San Diego.",
-            "SeaWorld San Diego is an animal theme park, oceanarium, outside aquarium.",
+            "Balboa Park is a 1,200-acre park with theaters, museums, a zoo, and outdoor space.",
+            "SeaWorld San Diego is a marine theme park.",
             "The USS Midway Museum is a historical naval aircraft carrier museum.",
-            "Cabrillo National Monument is at the southern tip of the Point Loma Peninsula.",
-            "La Jolla Cove is a small cove with a beach that is surrounded by cliffs in La Jolla.",
+            "Cabrillo National Monument commemorates where Europeans first landed on the west coast of the U.S.",
+            "La Jolla Cove is a small cove with a beach that is surrounded by cliffs.",
 
       };
         readonly string[] Place12 = new string[]
@@ -340,11 +340,11 @@ namespace ListViewMaui
 
         readonly string[] Place12Description = new string[]
       {
-            "Its aquarium acts as an aquatic science education institution.",
-            "Zoo Atlanta is an Association of Zoos and Aquariums accredited zoological park.",
+            "The Georgia aquarium is the largest in the States and is an aquatic education institution.",
+            "Zoo Atlanta began in 1889 with the donation of former circus animals.",
             "The Atlanta Botanical Garden is a 30 acres botanical garden.",
-            "Piedmont Park is an urban park, the land was owned by Dr. Benjamin Walker.",
-            "Centennial Olympic Park is a 22-acre public park in downtown Atlanta, Georgia.",
+            "Piedmont Park is an expanding urban park with playgrounds and athletic facilities.",
+            "Centennial Olympic Park is a 22-acre public park built for the 1996 Summer Games.",
 
       };
         readonly string[] Place13 = new string[]
@@ -359,10 +359,10 @@ namespace ListViewMaui
 
         readonly string[] Place13Description = new string[]
       {
-            "The National WWII Museum, is a military history museum.",
+            "The National WWII Museum is a military history museum.",
             "Jackson Square is a historic park in the French Quarter of New Orleans.",
-            "Bourbon Street is a historic street in the heart of the French Quarter.",
-            "It is the seat of the Roman Catholic Archdiocese of New Orleans.",
+            "Bourbon Street is party central for the French Quarter, lined with bars and clubs.",
+            "City Park is a 1,300-acre public park in northern New Orleans with a botanic garden.",
 
       };
         readonly string[] Place14 = new string[]
@@ -378,11 +378,11 @@ namespace ListViewMaui
         readonly string[] Place14Description = new string[]
       {
             "The Walt Disney World Resort, is an entertainment resort complex.",
-            "Magic Kingdom Park is a theme park at the Walt Disney World Resort in Bay Lake.",
-            "Epcot is a theme park at the Walt Disney World Resort.",
-            "Disney's Hollywood Studios is a theme park at the Walt Disney World Resort.",
-            "Disney's Animal Kingdom Theme Park is a zoological theme park.",
-            "Universal Studios Florida is a theme park and opened to the public on June 7, 1990.",
+            "The Magic Kingdom is a Disney theme park designed for families with small children.",
+            "Epcot is a Disney theme park with an international theme.",
+            "Disney's Hollywood Studios is a theme park based on film, TV, and music.",
+            "Disney's Animal Kingdom centers around a zoological theme.",
+            "Universal Studios Florida is a theme park dedicated to the entertainment industry.",
 
       };
         readonly string[] Place15 = new string[]
@@ -395,10 +395,10 @@ namespace ListViewMaui
 
         readonly string[] Place15Description = new string[]
       {
-            "The 23-acre park contains a conservatory, a variety of theme gardens.",
-            "Elitch Gardens Theme & Water Park is an amusement park in Denver, Colorado.",
-            "Coors Field is a baseball stadium in downtown Denver, Colorado.",
-            "The Colorado State Capitol Building, located at 200 East Colfax Avenue in Denver.",
+            "The 23-acre park contains a conservatory and many themed gardens.",
+            "Elitch Gardens Theme and Water Park is an amusement park in Denver.",
+            "Coors Field is a baseball stadium in downtown Denver.",
+            "The Colorado State Capitol Building houses the state’s General Assembly.",
       };
         #endregion
     }
