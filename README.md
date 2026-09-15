@@ -1,5 +1,5 @@
-# horizontal-listview-with-travel-place-ui-.net-maui-listview
-HorizontalListView with travel places UI in .NET MAUI ListView
+# Horizontal ListView with travel places in .NET MAUI ListView (SfListView)
+This example descrives how to create a horizontal ListView with travel places UI using .NET MAUI ListView (SfListView).
 
 ## Sample
 
